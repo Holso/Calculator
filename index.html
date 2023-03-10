@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="calculator">
+  <div class="afisare">
+    <h3 class="titlu">Calculator</h3>
+    <div class="ecran">
+    </div>
+    
+  </div>
+  <div class="butoane">
+    <div class="rand">
+        <div class="numar">
+          <button class="btn btn-light btn-operator" id="op-c" onclick="stergere()"><span class="operator">C</span></button>
+        </div>
+        <div class="numar">
+          <button class="btn btn-light btn-operator" id="op-x" onclick="stergere_cifra()"><span class="operator">&lt;</span></button>
+        </div>
+        <div class="numar">
+          <button class="btn btn-light btn-operator" id="op-procent" onclick="afiseaza_ecran('%')"><span class="operator">%</span></button>
+        </div>
+        <div class="numar">
+            <button class="btn btn-light btn-operator" id="op-impartire" onclick="afiseaza_ecran('/')"><span class="operator">/</span></button>
+          </div>
+      </div>
+    <div class="rand">
+      <div class="numar">
+        <button class="btn btn-light " id="sapte" onclick="afiseaza_ecran(7)"><span class="cifra">7</span></button>
+      </div>
+      <div class="numar">
+        <button class="btn btn-light" id="opt"  onclick="afiseaza_ecran(8)"><span class="cifra">8</span></button>
+	  </div>
+      <div class="numar">
+        <button class="btn btn-light" id="noua"  onclick="afiseaza_ecran(9)"><span class="cifra">9</span></button>
+      </div>
+      <div class="numar">
+        <button class="btn btn-light btn-operator" id="op-inmultire" onclick="afiseaza_ecran('*')"><span class="operator">*</span></button>
+      </div>
+    </div>
+
+    <div class="rand">
+        <div class="numar">
+          <button class="btn btn-light " id="patru"  onclick="afiseaza_ecran(4)"><span class="cifra">4</span></button>
+        </div>
+        <div class="numar">
+          <button class="btn btn-light" id="cinci"  onclick="afiseaza_ecran(5)"><span class="cifra">5</span></button>
+        </div>
+        <div class="numar">
+          <button class="btn btn-light" id="sase"  onclick="afiseaza_ecran(6)"><span class="cifra">6</span></button>
+        </div>
+        <div class="numar">
+            <button class="btn btn-light btn-operator" id="op-minus" onclick="afiseaza_ecran('-')"><span class="operator">-</span></button>
+          </div>
+      </div>
+
+      <div class="rand">
+        <div class="numar">
+          <button class="btn btn-light" id="unu" onclick="afiseaza_ecran(1)"><span class="cifra">1</span></button>
+        </div>
+        <div class="numar">
+          <button class="btn btn-light" id="doi" onclick="afiseaza_ecran(2)"><span class="cifra">2</span></button>
+        </div>
+        <div class="numar">
+          <button class="btn btn-light" id="trei" onclick="afiseaza_ecran(3)"><span class="cifra">3</span></button>
+        </div>
+        <div class="numar">
+            <button class="btn btn-light btn-operator" id="op-plus" onclick="afiseaza_ecran('+')"><span class="operator">+</span></button>
+          </div>
+      </div>
+
+      <div class="rand">
+        <div class="numar">
+          <button class="btn btn-light" ><span class="cifra">+/-</span></button>
+        </div>
+        <div class="numar">
+          <button class="btn btn-light" id="zero" onclick="afiseaza_ecran(0)"><span class="cifra">0</span></button>
+        </div>
+        <div class="numar">
+          <button class="btn btn-light" id="punct" onclick="afiseaza_ecran('.')"><span class="cifra">.</span></button>
+        </div>
+        <div class="numar">
+            <button class="btn btn-light btn-operator" id="op-egal" onclick="egal()"><span class="operator">=</span></button>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="css/js.js"></script>
+</body>
+</html>
